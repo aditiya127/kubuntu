@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tutorial Instalasi Kubuntu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(240, 240, 240);
+        }
+
+        header {
+            background-color: #1f3f66;
+            padding: 10px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+
+        nav {
+            margin: 0px;
+            text-align: center;
+            background-color: #c83061;
+            padding: 23px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .banner {
+            background-color: #1f3f66;
+            padding: 50px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .banner h2 {
+            margin: 0;
+            font-size: 38px;
+        }
+
+        .banner p {
+            font-size: 18px;
+            color: #ffffff;
+        }
+
+        .carousel {
+            position: relative;
+            max-width: 600px;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .carousel img {
+            width: 100%;
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .step {
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .step h3 {
+            margin: 0;
+            font-size: 25px;
+        }
+
+        .step p {
+            font-size: 19px;
+            text-align: left;
+            font-family: Arial, sans-serif;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #c83061;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            background-color: #ebb842;
+        }
+        .back-to-top {
+            display: none; /* Initially hidden */
+            position: relative;
+            bottom: 0px;
+            right: 0px;
+            background-color: #c83061;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .back-to-top:hover {
+            background-color: #ebb842;
+        }
+        footer {
+            background-color: #1f3f66;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Tutorial Instalasi Kubuntu</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Profil</a>
+        <a href="penjelasan.html">Penjelasan</a>
+        <a href="instalasi.html">Instalasi</a>
+        <a href="tampilan.html">Tampilan</a>
+    </nav>
+
+    <main>
+        <div class="banner">
+            <h2>Persiapan Sebelum Instalasi</h2>
+            <p>Sebelum memulai proses instalasi Kubuntu, ada beberapa langkah persiapan yang perlu dilakukan untuk memastikan proses berjalan lancar. 
+                Pertama, pastikan bahwa perangkat keras komputer Anda memenuhi persyaratan sistem minimal Kubuntu. Ini termasuk, 
+                namun tidak terbatas pada, prosesor, memori (RAM), dan ruang penyimpanan. Selanjutnya, 
+                unduh file ISO Kubuntu dari situs web resminya dan buat media instalasi bootable, seperti USB drive atau DVD. 
+                Terakhir, lakukan backup data penting untuk menghindari kehilangan data selama proses instalasi.</p>
+        </div>
+        <div class="step">    
+            <h3>Unduh File ISO Kubuntu</h3>
+            <img src="copyan.png" alt="Profil Picture">
+            <p>- Buka situs resmi di <a href ="https://kubuntu.org/"> Kubuntu </a> dan unduh file ISO versi Kubuntu yang diinginkan.</p>
+        </div>
+
+        <div class="step">
+            <h3>Install Virtual Box</h3>
+            <img src="vortualbox.png" alt="Profil Pictuce">
+            <p>- Pastikan VirtualBox sudah terpasang di komputer Anda. Jika belum, Anda bisa mengunduhnya dari <a href="https://www.virtualbox.org/"> Virtual box</a></p>
+        </div>
+
+        <div class="step">
+            <h3>Langkah-langkah Instalasi Kubuntu di Virtual Box</h3>
+            <img src="new.png" alt="Profil Picture">
+            <p>1. Buat Mesin Virtual Baru:</p>
+                <p>- Buka VirtualBox dan klik tombol New (Baru).</p>
+                <p>- Beri nama mesin virtual karena saya sudah instal, misalnya “Kubuntu2”.</p>
+                <p>- Pilih folder yang mau diinstal</p>
+                <p>- Pilih file ISO yang tadi di download</p>
+                <p>- Pilih Type sebagai Linux dan Version sebagai Ubuntu (64-bit).</p>
+        </div>
+
+        <div class="step">
+            <h3>Langkah Alokasikan RAM</h3>
+            <img src="hardware.png" alt="Profile Picture">
+            <p>- Alokasikan jumlah RAM untuk mesin virtual.
+                Saya memilih 2 GB (2048 MB) untuk Kubuntu tidak harus sama 2 GB sesuaikan dengan komputer atau laptop penyimpanan anda.</p>
+        </div>
+
+        <div class="step">
+            <h3>Langkah Buat Hardisk Virtual</h3>
+            <img src="hardis.png" alt="Profil Pictuce">
+            <p>- Pilih Create a virtual hard disk now (Buat hard disk virtual sekarang) dan klik Create (Buat).</p>
+                <p>- Pilih VDI (VirtualBox Disk Image) sebagai format hard disk virtual.</p>
+                <p>- Pilih Ukuran sesuai kebutuhan, misalnya 25,00gb</p>
+                <p>- Lalu klik Finish</p>
+        </div>
+
+        <div class="step">
+            <h3>Langkah Start Running (Mulai)</h3>
+            <img src="run.png" alt="Profil Pictuce">
+            <p>- Kembali ke halaman utama VirtualBox dan klik Start (Mulai) untuk menjalankan mesin virtual.</p>
+            <p>- VirtualBox akan mem-boot dari file ISO Kubuntu dan menampilkan menu instalasi Kubuntu.</p>
+        </div>
+
+        <div class="step">
+            <h3>Langkah Instalasi Kubuntu</h3>
+            <div class="carousel">
+                <img class="active" src="instalawal.png" alt="Gambar 1">
+                <img src="bahasa.png" alt="Gambar 2">
+                <img src="location.png" alt="Gambar 3">
+                <img src="keybord.png" alt="Gambar 4">
+                <img src="normal.png" alt="Gambar 5">
+                <img src="password.png" alt="Gambar 6">
+                <img src="prosesinstal.png" alt="Gambar 7">
+                <img src="finsih.png" alt="Gambar 8">
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            </div>
+            <p>- Ketika sudah menampilkan menu instalasi, Pilih bahasa anda dan internet connection, Lalu pilih install Kubuntu</p>
+            <p>- Klik next aja, Pilih zona dan wilayah</p>
+            <p>- Lalu pilih keyboard model</p>
+            <p>- Setelah itu kita disuruh milih mau install yang mana sesuai keinginan, karena buat praktek saya pilih minimal instalasion</p>
+            <p>- Ini adalah menu opsional kalau mau aman silahkan kasih password</p>
+            <p>- Terakhir langsung install</p>
+            <p>- Kubuntu kini sudah terinstal dan dapat digunakan dalam VirtualBox.</p>
+            <p>- Anda dapat masuk menggunakan username dan password yang telah dibuat sebelumnya.</p>.
+            <a href="tampilan.html" class="cta-button">Melanjutkan ke Tampilan</a>
+        </div>    
+    </div>
+    <a href="#" class="back-to-top" id="backToTop">Back to Top</a>
+    </main>
+    <footer>
+        <p>&copy; KUBUNTU</p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName('carousel')[0].getElementsByTagName('img');
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex - 1].style.display = "block";  
+        }
+
+        function changeSlide(n) {
+            slideIndex += n;
+            let slides = document.getElementsByClassName('carousel')[0].getElementsByTagName('img');
+            if (slideIndex > slides.length) {slideIndex = 1}
+            if (slideIndex < 1) {slideIndex = slides.length}
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slides[slideIndex - 1].style.display = "block";  
+        }
+    </script>
+    <script>
+        // Get the button
+        const backToTopButton = document.getElementById("backToTop");
+
+        // Show or hide the button based on scroll position
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        };
+
+        // Smooth scroll to top when the button is clicked
+        backToTopButton.addEventListener("click", function(event) {
+            event.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kubuntu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(240, 240, 240);
+        }
+
+        header {
+            background-color: #1f3f66;
+            padding: 10px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+
+        nav {
+            margin: 0px;
+            text-align: center;
+            background-color: #c83061;
+            padding: 23px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .banner {
+            background-color: #1f3f66;
+            padding: 50px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .banner h2 {
+            margin: 0;
+            font-size: 36px;
+            color: #ffffff;
+        }
+
+        .banner p {
+            font-size: 18px;
+            color: #ffffff;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #c83061;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            background-color: #ebb842;
+        }
+
+        .back-to-top {
+            display: none; /* Initially hidden */
+            position: relative;
+            bottom: 0px;
+            right: 0px;
+            background-color: #c83061;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .back-to-top:hover {
+            background-color: #ebb842;
+        }
+
+        footer {
+            background-color: #1f3f66;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Gallery styles */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .gallery-item {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .gallery-item h3 {
+            margin: 10px 0;
+            font-size: 23px;
+        }
+
+        .gallery-item p {
+            padding: 0 10px 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 19px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Tampilan Kubuntu</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Profil</a>
+        <a href="penjelasan.html">Penjelasan</a>
+        <a href="instalasi.html">Instalasi</a>
+        <a href="tampilan.html">Tampilan</a>
+    </nav>
+
+    <main>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="tampilan.png" alt="Gambar 1">
+                <h3>Destkop</h3>
+                <p>Ini adalah tampilan depan kubuntu yang telah di install versi 24.04 LTS</p>
+                <p>Desktop Environment digunakan untuk merujuk pada keseluruhan lingkungan kerja visual yang diakses oleh pengguna.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="discover.png" alt="Gambar 2">
+                <h3>Discover</h3>
+                <p>Discover adalah aplikasi manajer perangkat lunak di Kubuntu (dan lingkungan KDE lainnya) yang memudahkan pengguna untuk mencari, menginstal, dan mengelola perangkat lunak. Berikut adalah beberapa fitur utama Discover:</p>
+                   <p> 1.	Memudahkan pengguna untuk menavigasi dan menemukan aplikasi.</p>
+                   <p> 2.	Menyediakan informasi tentang aplikasi, termasuk deskripsi, tangkapan layar, dan ulasan dari pengguna lain.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="konsole.png" alt="Gambar 3">
+                <h3>Konsole</h3>
+                <p>Konsole adalah terminal emulator di lingkungan desktop KDE, seperti Kubuntu. Ia memungkinkan pengguna untuk berinteraksi dengan sistem melalui baris perintah. Fitur utamanya meliputi dukungan multitab, kustomisasi tampilan, riwayat perintah, dan dukungan untuk berbagai shell. Konsole sangat berguna bagi pengguna yang memerlukan akses langsung ke sistem operasi untuk pengembangan, administrasi, atau tugas sehari-hari.</p>
+            </div>
+            <div class=" gallery-item">
+                <img src="kate.png" alt="Gambar 4">
+                <h3>Kate</h3>
+                <p>Kate adalah editor teks canggih di lingkungan KDE yang dirancang untuk pengeditan kode dan teks. Fitur utamanya meliputi sorotan sintaksis untuk berbagai bahasa pemrograman, dukungan multitab, dan kemampuan kustomisasi antarmuka. Kate juga mendukung plugin untuk menambah fungsionalitas, serta menyediakan fitur pencarian dan penggantian yang kuat. Aplikasi ini sangat cocok untuk programmer dan pengguna yang memerlukan alat pengeditan teks yang fleksibel dan fungsional.</p>
+                    <p>1.	Pengeditan Teks Umum: Kate dapat digunakan untuk membuat dan mengedit file teks biasa, seperti dokumen, catatan, atau skrip.
+                    </p>
+            </div>
+            <div class="gallery-item">
+                <img src="spectle.png" alt="Gambar 5">
+                <h3>Spectacle</h3>
+                <p>Spectacle adalah aplikasi penangkap layar (screenshot) di lingkungan desktop KDE. Berikut adalah beberapa fitur utama Spectacle:
+                    <p>1.	Pengambilan Gambar: Memungkinkan pengguna untuk mengambil tangkapan layar dari seluruh layar, jendela tertentu, atau area yang dipilih.
+                    <p>2.	Pengeditan Dasar: Setelah mengambil tangkapan layar, pengguna dapat melakukan beberapa pengeditan dasar, seperti menambahkan anotasi atau menggambar pada gambar.
+                    <p>3.	Format Penyimpanan: Mendukung berbagai format penyimpanan gambar, termasuk PNG, JPG, dan lainnya.
+                    <p>4.	Kustomisasi: Pengguna dapat mengatur pintasan keyboard untuk mengambil tangkapan layar dengan cepat.
+                    <p>5.	Ekspor dan Berbagi: Memungkinkan pengguna untuk mengekspor hasil tangkapan layar ke lokasi tertentu atau membagikannya melalui clipboard.
+                    Spectacle adalah alat yang berguna bagi pengguna yang sering memerlukan tangkapan layar untuk dokumentasi, presentasi, atau berbagi informasi.
+                    </p>
+            </div>
+            <div class="gallery-item">
+                <img src="infocenter.png" alt="Gambar 6">
+                <h3>Info Center</h3>
+                <p>Info Center adalah aplikasi di lingkungan desktop KDE yang memberikan informasi tentang sistem. Berikut adalah beberapa fitur utama Info Center:</p>
+                    <p>1.	Detail Sistem: Menampilkan informasi mendetail tentang perangkat keras dan perangkat lunak, seperti CPU, RAM, penyimpanan, dan perangkat jaringan.</p>
+                    <p>2.	Status Jaringan: Menyediakan informasi tentang koneksi jaringan yang aktif, termasuk alamat IP dan status koneksi.</p>
+                    <p>3.	Informasi Perangkat Keras: Memberikan data tentang komponen perangkat keras, seperti motherboard, kartu grafis, dan perangkat input.</p>
+                    <p>4.	Versi Perangkat Lunak: Menampilkan informasi tentang versi sistem operasi dan lingkungan desktop yang sedang digunakan.</p>
+                    <p>5.	Antarmuka Sederhana: Memiliki antarmuka yang mudah dinavigasi, memungkinkan pengguna untuk menemukan informasi yang mereka butuhkan dengan cepat.</p>
+                    <p>Info Center adalah alat yang berguna bagi pengguna dan administrator sistem untuk memantau dan memahami konfigurasi dan status sistem mereka.
+                    </p>
+            </div>
+            <div class="gallery-item">
+                <img src="gwenview.png" alt="Gambar 7">
+                <h3>Gwenview</h3>
+                <p>Gwenview adalah penampil gambar di lingkungan desktop KDE, seperti Kubuntu. Ia memungkinkan pengguna untuk membuka dan melihat berbagai format gambar, menavigasi antar gambar dengan mudah, dan melakukan pengeditan dasar seperti pemotongan dan pengubahan ukuran. Gwenview juga mendukung tampilan slide show dan menampilkan metadata gambar. Aplikasi ini dirancang untuk memberikan pengalaman yang sederhana dan efisien dalam mengelola koleksi gambar.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="firefox.png" alt="Gambar 8">
+                <h3>FireFox</h3>
+                <p>Firefox adalah peramban web yang memungkinkan pengguna untuk menjelajahi internet. Fungsinya meliputi:</p>
+                <p>1.	Penjelajahan Web: Memungkinkan akses ke situs web dan konten online.</p>
+                <p>2.	Privasi dan Keamanan: Menyediakan fitur untuk melindungi privasi pengguna, seperti pelindung pelacakan dan mode penjelajahan pribadi.</p>
+                <p>3.	Kustomisasi: Memungkinkan penyesuaian melalui tema dan ekstensi untuk meningkatkan pengalaman pengguna.</p>
+                <p>4.	Sinkronisasi: Mengizinkan sinkronisasi bookmark, riwayat, dan pengaturan di berbagai perangkat.</p>
+                <p>Firefox dirancang untuk memberikan pengalaman menjelajah yang cepat, aman, dan dapat disesuaikan.
+                </p>
+            </div>
+            <div class="gallery-item">
+                <img src="dolphin.png" alt="Gambar 9">
+                <h3>Dolphin</h3>
+                <p>Dolphin adalah pengelola file default di lingkungan desktop KDE. Ia menawarkan antarmuka intuitif dengan dukungan multitab, memungkinkan pengguna untuk menjelajahi dan mengelola file dengan mudah. Fitur unggulannya mencakup pratinjau file, pencarian cepat, dan integrasi dengan aplikasi lain. Dolphin dirancang untuk memberikan pengalaman pengelolaan file yang efisien dan fleksibel bagi pengguna Linux.</p> 
+                </div>        
+            <div class="gallery-item">
+                    <img src="asus.png" alt="Gambar 10">
+                    <h3>Start</h3>
+                    <p>Start Menu berisi beberapa elemen:</p>
+                        <p>Kolom aplikasi: Menampilkan aplikasi yang telah terinstal di komputer.</p>
+                        <p>Pencarian: Kolom pencarian untuk mencari aplikasi, file, atau pengaturan.</p>
+                        <p>Pengaturan cepat: Tautan ke pengaturan seperti Power (untuk mematikan atau restart), Settings, dan File Explorer.</p>
+                        <a href="index.html" class="cta-button">Kembali ke Awal</a>
+                    </div>
+            </div>
+        <a href="#" class="back-to-top" id="backToTop">Back to Top</a>
+    </main>
+    <footer>
+        <p>&copy; KUBUNTU</p>
+    </footer>
+    <script>
+        // Get the button
+        const backToTopButton = document.getElementById("backToTop");
+
+        // Show or hide the button based on scroll position
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        };
+
+        // Smooth scroll to top when the button is clicked
+        backToTopButton.addEventListener("click", function(event) {
+            event.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

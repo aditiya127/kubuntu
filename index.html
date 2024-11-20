@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kubuntu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(0, 0, 0) 31, 31;
+        }
+
+        header {
+            background-color: #1f3f66;
+            padding: 10px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+
+        nav {
+            margin: 0px;
+            text-align: center;
+            background-color: #c83061;
+            padding: 23px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .banner {
+            background-color: #1f3f66;
+            padding: 50px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .banner h2 {
+            margin: 0;
+            font-size: 36px;
+            color: #ffffff;
+        }
+
+        .banner p {
+            font-size: 18px;
+            color: #ffffff;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #c83061;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            background-color: #ebb842;
+        }
+        .back-to-top {
+            display: none; /* Initially hidden */
+            position: relative;
+            bottom: 0px;
+            right: 0px;
+            background-color: #c83061;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .back-to-top:hover {
+            background-color: #ebb842;
+        }
+
+        footer {
+            background-color: #1f3f66;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            position: relative; /* Ubah dari fixed ke relative */
+            width: 100%;
+            bottom: 0; /* Ini bisa dihapus karena tidak diperlukan lagi */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>KUBUNTU</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Profil</a>
+        <a href="penjelasan.html">Penjelasan</a>
+        <a href="instalasi.html">Instalasi</a>
+        <a href="tampilan.html">Tampilan</a>
+    </nav>
+    <main>
+        <div class="banner">
+            <h2>Apa itu Ubuntu</h2>
+            <p>Ubuntu adalah distribusi sistem operasi Linux yang berbasis pada Debian, 
+                dikembangkan oleh Canonical Ltd, 
+                dan dirancang dengan fokus pada kemudahan penggunaan, 
+                stabilitas, dan keamanan. 
+                Ubuntu terkenal karena memberikan pengalaman pengguna yang nyaman untuk pemula maupun pengguna berpengalaman dengan menyediakan berbagai 
+                aplikasi dan alat-alat yang siap digunakan sejak awal instalasi.</p>
+            
+            <h2>Apa itu Linux</h2>
+            <p>Linux adalah keluarga sistem operasi yang didasarkan pada kernel Linux,
+                di mana kernel adalah bagian inti dari sebuah sistem operasi.
+                Kernel memungkinkan komunikasi antara komponen hardware dan software.</p>
+                <p>Sementara itu, Ubuntu merupakan distribution Linux yang didasarkan pada Debian. 
+                Ubuntu sangat cocok untuk cloud computing, server, desktop, dan perangkat internet of things (IoT) lainnya.
+                Jadi, perbedaan Linux dan Ubuntu yang paling utama adalah adalah,
+                Linux merupakan keluarga sistem operasi berbasis Unix,
+                sedangkan Ubuntu adalah salah satu distribusi Linux.</p>
+            <!-- Tombol Call to Action -->
+            <a href="penjelasan.html" class="cta-button">Melanjutkan ke Penjelasan</a>
+        </div>
+        <a href="#" class="back-to-top" id="backToTop">Back to Top</a>
+    </main>
+    <footer>
+        <p>&copy; KUBUNTU</p>
+    </footer>
+    <script>
+        // Get the button
+        const backToTopButton = document.getElementById("backToTop");
+
+        // Show or hide the button based on scroll position
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        };
+
+        // Smooth scroll to top when the button is clicked
+        backToTopButton.addEventListener("click", function(event) {
+            event.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html> 

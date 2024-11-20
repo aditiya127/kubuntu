@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Penjelasan Ubuntu&Kubuntu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(0, 0, 0) 31, 31;
+        }
+
+        header {
+            background-color: #1f3f66;
+            padding: 10px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+
+        nav {
+            margin: 0px;
+            text-align: center;
+            background-color: #c83061;
+            padding: 23px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .banner {
+            background-color: #1f3f66;
+            padding: 50px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .banner h2 {
+            margin: 0;
+            font-size: 36px;
+            color: #ffffff;
+        }
+
+        .banner p {
+            font-size: 18px;
+            color: #ffffff;
+        }
+        .step {
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .step h3 {
+            margin: 0;
+            font-size: 25px;
+        }
+
+        .step p {
+            font-size: 19px;
+            text-align: left;
+            font-family: Arial, sans-serif;
+        }
+
+
+        .cta-button {
+            display: inline-block;
+            background-color: #c83061;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            background-color: #ebb842;
+        }
+        
+        .back-to-top {
+            display: none; /* Initially hidden */
+            position: relative;
+            bottom: 0px;
+            right: 0px;
+            background-color: #c83061;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .back-to-top:hover {
+            background-color: #ebb842;
+        }
+
+
+        footer {
+            background-color: #1f3f66;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            position: relative; /* Ubah dari fixed ke relative */
+            width: 100%;
+            bottom: 0; /* Ini bisa dihapus karena tidak diperlukan lagi */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Penjelasan Ubuntu & Kubuntu</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Profil</a>
+        <a href="penjelasan.html">Penjelasan</a>
+        <a href="instalasi.html">Instalasi</a>
+        <a href="tampilan.html">Tampilan</a>
+    </nav>
+    <main>
+        <div class=" step">
+            <img src="Screenshot (94)~2.png" alt="Profil Picture">
+            <div>
+                <div class="banner">
+                <h2>UBUNTU 24.04</h2>
+                <p>Ubuntu 24.04 (dijadwalkan rilis pada April 2024) adalah versi LTS (Long-Term Support) terbaru dari Ubuntu yang akan menerima dukungan selama lima tahun dari Canonical.
+                    Versi LTS biasanya lebih stabil karena fokusnya pada peningkatan kinerja dan keamanan daripada eksperimen fitur besar, 
+                    menjadikannya pilihan yang solid untuk server, 
+                    pengembangan perangkat lunak, 
+                    dan penggunaan bisnis.</p>
+                    </div>
+                    <div class="step">
+            <img src="ban.jpeg" alt="Profile Picture">
+            </div>
+            <div class="banner">
+                <h2>Kubuntu</h2>
+                <p>Kubuntu merupakan salah satu distribusi Linux yang berasal dari Ubuntu,
+                    namun dengan perbedaan utama yaitu penggunaan KDE Plasma sebagai lingkungan desktopnya. KDE Plasma dikenal dengan tampilannya yang modern dan dapat dikustomisasi secara luas, memberikan pengalaman pengguna yang berbeda dari Ubuntu yang menggunakan GNOME sebagai desktop environment defaultnya. Kubuntu menawarkan kombinasi antara kekuatan dan fleksibilitas Ubuntu dengan keindahan dan kekayaan fitur KDE Plasma, 
+                    menjadikannya pilihan yang menarik bagi banyak pengguna komputer.</p>
+                <p>Kubuntu datang dengan serangkaian aplikasi KDE yang terintegrasi secara erat,
+                    menciptakan ekosistem yang koheren dan efisien.
+                    Aplikasi seperti Dolphin (file manager),
+                    Konsole (terminal), dan Kontact (suite produktivitas) dirancang untuk bekerja bersama dengan mulus,
+                    memberikan pengalaman yang konsisten dan produktif.Integrasi ini memudahkan pengguna untuk melakukan berbagai tugas tanpa harus
+                    mencari alternatif aplikasi dari pihak ketiga.</p>    
+            <!-- Tombol Call to Action -->
+            <a href="instalasi.html" class="cta-button">Melanjutkan ke Instalasi</a>
+            </div>
+        </div>    
+        <a href="#" class="back-to-top" id="backToTop">Back to Top</a>
+    </main>
+    <footer>
+        <p>&copy; KUBUNTU</p>
+    </footer>
+    <script>
+        // Get the button
+        const backToTopButton = document.getElementById("backToTop");
+
+        // Show or hide the button based on scroll position
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        };
+
+        // Smooth scroll to top when the button is clicked
+        backToTopButton.addEventListener("click", function(event) {
+            event.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
